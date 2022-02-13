@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Codemancers</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <section class="post">
+          <header>Create Post</header>
+          <form action="#">
+            <div class="content">
+              <div class="details">
+                <p>Codemancers</p>
+              </div>
+            </div>
+            <textarea placeholder="What's on your mind?" spellcheck="false" required></textarea>
+            <div class="theme-emoji">
+             <button id="redirect"> <img src="https://img.icons8.com/ios-filled/50/000000/gif.png"/ class="gifs"> </button>
+              <i class="fa-solid fa-gif"></i>
+              <i class="fa-regular fa-gif"></i>
+            </div>
+            <div class="options">
+              <p>Add to Your Post</p>
+              <ul class="list">
+                <li><img src="icons/gallery.svg" alt="gallery"></li>
+                <li><img src="icons/tag.svg" alt="gallery"></li>
+                <li><img src="icons/emoji.svg" alt="gallery"></li>
+                <li><img src="icons/mic.svg" alt="gallery"></li>
+                <li><img src="icons/more.svg" alt="gallery"></li>
+              </ul>
+            </div>
+            <button>Post</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <script>
+
+      const gifs = document.querySelector('.gifs');
+      gifs.addEventListener('click', () => {
+        location.href = "gifhy.html";
+      })
+
+
+    </script>
+    
+  </body>
+</html>
